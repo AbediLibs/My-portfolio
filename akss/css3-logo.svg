@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">CSS3</title>
-  <desc id="desc">Blue CSS3 shield logo with white CSS lettering and number 3</desc>
+  <title id="title">CSS3 logo</title>
+  <desc id="desc">Blue shield with white CSS3 lettering</desc>
   <defs>
     <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#33A9DC"/>
       <stop offset="1" stop-color="#1572B6"/>
     </linearGradient>
   </defs>
-  <path fill="url(#shield)" d="M48 24h416l-38 424-170 40-170-40z"/>
-  <path fill="#1572B6" d="M256 58v392l136-32 34-360z"/>
-  <path fill="#fff" d="M118 112h276l-6 55H180l6 55h196l-17 180-109 30-108-30-7-82h57l4 38 54 15 55-15 8-81H135z"/>
-  <path fill="#fff" d="M222 178h66l-8 58h-55l-5-58zm-12 88h61l-7 78-31 9-30-9-3-37h54l-2 19-18 5-18-5z" opacity=".0"/>
-  <text x="256" y="318" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="900" fill="#fff">3</text>
+  <path fill="url(#shield)" d="M48 24h416l-38 424-170 40L86 448z"/>
+  <path fill="#0B5F98" opacity=".24" d="M256 58v392l136-32 34-360z"/>
+  <text x="256" y="205" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="800" letter-spacing="3" fill="#fff">CSS</text>
+  <text x="256" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="220" font-weight="900" fill="#fff">3</text>
 </svg>
