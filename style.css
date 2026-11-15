@@ -395,3 +395,30 @@ footer {
     .social-link { width: 66px; height: 66px; border-radius: 18px; }
     .social-link img { width: 32px; height: 32px; }
 }
+
+
+/* Technology logos beside skill names */
+#skills .skill-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 14px;
+    line-height: 1.2;
+}
+#skills .skill-icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    flex: 0 0 34px;
+    vertical-align: middle;
+}
+@media (max-width: 600px) {
+    #skills .skill-title { gap: 8px; }
+    #skills .skill-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+    }
+}
