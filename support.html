@@ -39,13 +39,13 @@
         <div class="support-panel glass-panel reveal">
           <form class="contact-form" id="supportForm">
             <label for="supportName" data-i18n="labelName">نام</label>
-            <input id="supportName" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="نام شما">
+            <input id="supportName" name="name" type="text" autocomplete="name" maxlength="80" required data-i18n-placeholder="namePlaceholder" placeholder="نام شما">
             <label for="supportEmail" data-i18n="labelEmail">ایمیل</label>
-            <input id="supportEmail" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="name@example.com">
+            <input id="supportEmail" name="email" type="email" autocomplete="email" maxlength="120" required data-i18n-placeholder="emailPlaceholder" placeholder="name@example.com">
             <label for="supportSubject" data-i18n="labelSubject">موضوع درخواست</label>
-            <input id="supportSubject" name="subject" type="text" maxlength="120" required placeholder="مثلاً مشکل در نمایش سایت">
+            <input id="supportSubject" name="subject" type="text" maxlength="120" required data-i18n-placeholder="supportSubjectPlaceholder" placeholder="مثلاً مشکل در نمایش سایت">
             <label for="supportMessage" data-i18n="labelMessage">توضیحات درخواست</label>
-            <textarea id="supportMessage" name="message" rows="6" maxlength="2000" required placeholder="مشکل یا درخواستت را با جزئیات بنویس..."></textarea>
+            <textarea id="supportMessage" name="message" rows="6" maxlength="2000" required data-i18n-placeholder="supportMessagePlaceholder" placeholder="مشکل یا درخواستت را با جزئیات بنویس..."></textarea>
             <div class="form-actions">
               <button class="button button-primary" type="submit" data-i18n="sendWhatsApp">آماده‌سازی پیام در واتساپ</button>
               <button class="button button-ghost" type="button" data-email-form="supportForm" data-i18n="sendEmail">ارسال از طریق ایمیل</button>
