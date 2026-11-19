@@ -14,6 +14,7 @@ const translations = {
         portfolioProject: "Portfolio Website", portfolioDescription: "My personal website.",
         landingProject: "Landing Page", landingDescription: "A modern landing page design.",
         designProject: "Web Design", designDescription: "A creative web design project.",
+        brandProjectTitle: "Mohammad Mehdi — Developer Brand", brandProjectDescription: "Personal logo concept in a neon-blue tech style.",
         contactTitle: "Contact", contactDescription: "Feel free to get in touch with me!",
         sayHello: "Say Hello", whatsappSupport: "WhatsApp Support", copyright: "© 2026 My portfolio. All rights reserved.",
         message: "Thank you for visiting my portfolio! Have a great day!"
@@ -33,6 +34,7 @@ const translations = {
         portfolioProject: "وب‌سایت نمونه‌کار", portfolioDescription: "وب‌سایت شخصی من.",
         landingProject: "صفحهٔ فرود", landingDescription: "طراحی مدرن صفحهٔ فرود.",
         designProject: "طراحی وب", designDescription: "یک پروژهٔ خلاقانهٔ طراحی وب.",
+        brandProjectTitle: "برند برنامه‌نویسی محمد مهدی", brandProjectDescription: "طرح لوگوی شخصی با سبک فناوری آبی نئونی.",
         contactTitle: "ارتباط با", contactDescription: "برای ارتباط با من پیام بدهید!",
         sayHello: "سلام کن", whatsappSupport: "پشتیبانی در واتساپ", copyright: "© ۲۰۲۶ نمونه‌کار من. تمامی حقوق محفوظ است.",
         message: "از بازدید شما از نمونه‌کار من سپاسگزارم! روز خوبی داشته باشید."
