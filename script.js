@@ -115,6 +115,32 @@ function setLanguage(language) {
   });
 }
 
+// Header retracts upward while scrolling down and returns while scrolling up.
+let previousScrollY = window.scrollY;
+let scrollTicking = false;
+function handleHeaderScroll() {
+  const currentY = window.scrollY;
+  if (!header || header.classList.contains("is-menu-open")) {
+    if (header) header.classList.remove("is-hidden");
+    previousScrollY = currentY;
+    scrollTicking = false;
+    return;
+  }
+  if (currentY < 90 || currentY < previousScrollY - 6) {
+    header.classList.remove("is-hidden");
+  } else if (currentY > previousScrollY + 8 && currentY > 140) {
+    header.classList.add("is-hidden");
+  }
+  previousScrollY = currentY;
+  scrollTicking = false;
+}
+window.addEventListener("scroll", () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(handleHeaderScroll);
+    scrollTicking = true;
+  }
+}, { passive: true });
+
 function closeMenu() {
   if (!menuToggle || !navLinks) return;
   menuToggle.setAttribute("aria-expanded", "false");
