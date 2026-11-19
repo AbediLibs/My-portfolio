@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081327">
+  <meta name="description" content="ارسال درخواست پشتیبانی به محمد مهدی.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/svg+xml" href="akss/favicon.svg">
+  <title>پشتیبانی | محمد مهدی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fa">
+  <a class="skip-link" href="#main" data-i18n="skipContent">رفتن به محتوای اصلی</a>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="منوی اصلی">
+      <a class="brand" href="index.html#home"><img src="akss/favicon.svg" alt="" width="38" height="38"><span data-i18n="brandName">محمد مهدی</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="باز کردن منو"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home" data-i18n="navHome">خانه</a></li>
+        <li><a href="index.html#about" data-i18n="navAbout">درباره من</a></li>
+        <li><a href="index.html#skills" data-i18n="navSkills">مهارت‌ها</a></li>
+        <li><a href="index.html#projects" data-i18n="navProjects">پروژه‌ها</a></li>
+        <li><a href="support.html" aria-current="page" data-i18n="navSupport">پشتیبانی</a></li>
+        <li><a href="index.html#contact" data-i18n="navContact">ارتباط</a></li>
+        <li><button class="language-btn" id="languageBtn" type="button">English</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="support-page">
+    <section class="section">
+      <div class="container support-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="supportEyebrow">درخواست کمک یا گزارش مشکل</p>
+          <h1 data-i18n="supportTitle">مرکز پشتیبانی</h1>
+          <p data-i18n="supportIntro">جزئیات درخواستت را بنویس تا بتوانم بهتر راهنمایی‌ات کنم.</p>
+        </div>
+        <div class="support-panel glass-panel reveal">
+          <form class="contact-form" id="supportForm">
+            <label for="supportName" data-i18n="labelName">نام</label>
+            <input id="supportName" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="نام شما">
+            <label for="supportEmail" data-i18n="labelEmail">ایمیل</label>
+            <input id="supportEmail" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="name@example.com">
+            <label for="supportSubject" data-i18n="labelSubject">موضوع درخواست</label>
+            <input id="supportSubject" name="subject" type="text" maxlength="120" required placeholder="مثلاً مشکل در نمایش سایت">
+            <label for="supportMessage" data-i18n="labelMessage">توضیحات درخواست</label>
+            <textarea id="supportMessage" name="message" rows="6" maxlength="2000" required placeholder="مشکل یا درخواستت را با جزئیات بنویس..."></textarea>
+            <div class="form-actions">
+              <button class="button button-primary" type="submit" data-i18n="sendWhatsApp">آماده‌سازی پیام در واتساپ</button>
+              <button class="button button-ghost" type="button" data-email-form="supportForm" data-i18n="sendEmail">ارسال از طریق ایمیل</button>
+            </div>
+            <p class="form-status" id="supportStatus" role="status" aria-live="polite" data-i18n="supportFormNotice">پیام در واتساپ یا برنامه ایمیل آماده می‌شود؛ برای ارسال نهایی باید آن را تأیید کنی.</p>
+          </form>
+        </div>
+        <div class="support-notice reveal">
+          <span class="notice-icon">i</span>
+          <div>
+            <strong data-i18n="backendPendingTitle">وضعیت سامانه</strong>
+            <p data-i18n="backendPendingText">نسخه فعلی روی GitHub Pages است؛ بنابراین فرم فعلاً پیام را در واتساپ یا ایمیل آماده می‌کند. ذخیره در MySQL و پنل مدیریت پس از راه‌اندازی هاست PHP فعال می‌شود.</p>
+          </div>
+        </div>
+        <a class="back-home" href="index.html" data-i18n="backHome">← بازگشت به صفحه اصلی</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><img src="akss/favicon.svg" alt="" width="30" height="30"><span data-i18n="brandName">محمد مهدی</span></a><p data-i18n="footerText">ساخته‌شده با علاقه به یادگیری و توسعه وب.</p><p>© <span id="currentYear">2026</span> <span data-i18n="brandName">محمد مهدی</span></p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
