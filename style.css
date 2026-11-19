@@ -426,3 +426,17 @@ footer {
 /* Brand logo portfolio showcase card */
 .brand-project-card { width: min(340px, 100%); overflow: hidden; }
 .brand-project-image { width: 100%; height: auto; display: block; border-radius: 12px; margin: 0 auto 18px; border: 1px solid rgba(91,181,255,.3); }
+
+
+/* Dedicated portrait background for mobile phones */
+@media (max-width: 700px) {
+    body {
+        background-image:
+            linear-gradient(rgba(3, 7, 20, 0.12), rgba(3, 7, 20, 0.24)),
+            url("akss/portfolio-bg-mobile.jpg");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
