@@ -422,3 +422,7 @@ footer {
         flex-basis: 30px;
     }
 }
+
+/* Brand logo portfolio showcase card */
+.brand-project-card { width: min(340px, 100%); overflow: hidden; }
+.brand-project-image { width: 100%; height: auto; display: block; border-radius: 12px; margin: 0 auto 18px; border: 1px solid rgba(91,181,255,.3); }
