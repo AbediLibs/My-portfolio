@@ -195,13 +195,13 @@
           <form class="contact-form glass-panel reveal" id="contactForm">
             <h3 data-i18n="formTitle">پیام خود را بنویس</h3>
             <label for="contactName" data-i18n="labelName">نام</label>
-            <input id="contactName" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="نام شما">
+            <input id="contactName" name="name" type="text" autocomplete="name" maxlength="80" required data-i18n-placeholder="namePlaceholder" placeholder="نام شما">
             <label for="contactEmail" data-i18n="labelEmail">ایمیل</label>
-            <input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="name@example.com">
+            <input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="120" required data-i18n-placeholder="emailPlaceholder" placeholder="name@example.com">
             <label for="contactSubject" data-i18n="labelSubject">موضوع</label>
-            <input id="contactSubject" name="subject" type="text" maxlength="120" required placeholder="موضوع پیام">
+            <input id="contactSubject" name="subject" type="text" maxlength="120" required data-i18n-placeholder="subjectPlaceholder" placeholder="موضوع پیام">
             <label for="contactMessage" data-i18n="labelMessage">متن پیام</label>
-            <textarea id="contactMessage" name="message" rows="4" maxlength="2000" required placeholder="پیامت را اینجا بنویس..."></textarea>
+            <textarea id="contactMessage" name="message" rows="4" maxlength="2000" required data-i18n-placeholder="messagePlaceholder" placeholder="پیامت را اینجا بنویس..."></textarea>
             <div class="form-actions">
               <button class="button button-primary" type="submit" data-i18n="sendWhatsApp">آماده‌سازی پیام در واتساپ</button>
               <button class="button button-ghost" type="button" data-email-form="contactForm" data-i18n="sendEmail">ارسال از طریق ایمیل</button>
