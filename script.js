@@ -168,26 +168,7 @@ if (languageButton) {
   languageButton.addEventListener("click", () => setLanguage(currentLanguage === "fa" ? "en" : "fa"));
 }
 
-// Curtain-style top bar: hide while scrolling down, reveal while scrolling up.
-let previousScrollY = window.scrollY;
-let scrollScheduled = false;
-window.addEventListener("scroll", () => {
-  if (scrollScheduled) return;
-  scrollScheduled = true;
-  window.requestAnimationFrame(() => {
-    const currentY = window.scrollY;
-    const menuOpen = header && header.classList.contains("is-menu-open");
-    if (header && !menuOpen) {
-      if (currentY < 50 || currentY < previousScrollY - 6) {
-        header.classList.remove("is-hidden");
-      } else if (currentY > previousScrollY + 8 && currentY > 140) {
-        header.classList.add("is-hidden");
-      }
-    }
-    previousScrollY = currentY;
-    scrollScheduled = false;
-  });
-}, { passive: true });
+// Header scroll behavior is handled by handleHeaderScroll above.
 
 // Reveal cards gently when they enter the viewport.
 const revealItems = document.querySelectorAll(".reveal");
